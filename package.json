@@ -1,0 +1,26 @@
+{
+  "name": "kucc-deploy",
+  "version": "1.0.0",
+  "description": "Deploys the kucc website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo no",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YcleptJohn/kucc-deploy.git"
+  },
+  "author": "John Taylor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YcleptJohn/kucc-deploy/issues"
+  },
+  "homepage": "https://github.com/YcleptJohn/kucc-deploy#readme",
+  "devDependencies": {
+    "nodemon": "1.17.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
