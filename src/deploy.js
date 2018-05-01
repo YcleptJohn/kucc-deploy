@@ -7,6 +7,6 @@ deploy.run = (payload) => {
     cmd.run('git fetch origin master', './kucc')
     cmd.run('git reset --hard origin/master', './kucc')
     cmd.run('NODE_ENV=production npm install && NODE_ENV=production npm run build:all-prod', './kucc')
-    cmd.run('pm2 start src/server.js --name kucc-server --env production', './kucc')
-    console.log('Deployment finished!')
+    console.log('Deployment finished; restarting ecosystem!')
+    cmd.run('pm2 start ecosystem.config.js --env production', '.')
 }
